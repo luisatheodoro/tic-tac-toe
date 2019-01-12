@@ -1,6 +1,15 @@
 describe('TicTacToe', function () {
-    it('starts with the board clean', function(){
+    var game;
+
+    beforeEach(function() {
         game = new TicTacToe();
-        expect(game.board()).toEqual([["", "", ""], ["", "", ""], ["", "", ""]]);
+    });
+
+    it('starts with the board clean', function(){
+        expect(game.board()).toEqual([
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""]
+        ]);
     });
 });
