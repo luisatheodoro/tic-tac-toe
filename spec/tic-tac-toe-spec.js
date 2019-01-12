@@ -1,4 +1,6 @@
-describe("tic-tac-toe-model", function () {
-
-
+describe('TicTacToe', function () {
+    it('starts with the board clean', function(){
+        game = new TicTacToe();
+        expect(game.board()).toEqual([["", "", ""], ["", "", ""], ["", "", ""]]);
+    });
 });

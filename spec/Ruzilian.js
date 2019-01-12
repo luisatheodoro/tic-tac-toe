@@ -2,7 +2,7 @@ const css = "text-shadow: -1px -1px hsl(0,100%,50%), 1px 1px hsl(5.4, 100%, 50%)
 
 
 function describe(def, func) {
-    console.log('%c'+ def, css);
+    console.log('%c'+ def, "color: green; font-size: 15px");
     return func();
 }
 
